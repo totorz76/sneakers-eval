@@ -1,0 +1,326 @@
+@font-face {
+    font-family: "kumbh" ;
+    src: url("../fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "kumbh";
+}
+img, input{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    max-width: 1440px;
+}
+/* header */
+/* nav */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+#menu div:first-child{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 25px;
+    p{
+        font-weight: bold;
+        padding-left: 1.5rem;
+        font-size: 35px;
+    }
+    i{
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+}
+nav ul{
+    display: none;
+}
+#openmenu{
+    display: none;
+}
+#profil{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    i{
+        align-self: center;
+        color: #646464;
+        font-size: 25px;
+    }
+    div{
+        width: fit-content;
+        align-self: center;
+    }
+    img{
+        width: 45px;
+        padding-top: .7rem;
+    }
+}
+/* img+over */
+#over{
+    background-image: url(../img/skateboarder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+h1{
+ color: rgb(255, 125, 26);
+ font-size: 80px;
+ width: 100%;
+ align-self: flex-end;
+ text-align: end;
+ padding-right: 3rem;
+ padding-bottom: 3rem;
+}
+header p:last-child{
+   display: none;
+}
+/*card*/
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.desc>div{
+    width: 90%;
+    justify-self: center;
+    h2{
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    h3{
+        padding-top: 1rem;
+    }
+    >p{
+        color: rgb(100, 100, 100);
+        font-size: 15px;
+    }
+}
+.price{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    p:first-child{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    p:nth-child(2){
+        color: rgb(255, 125, 26);
+        background-color:rgb(255, 228, 207) ;
+        display: block;
+        padding: .2rem;
+        border-radius: 5px;
+        margin-left: 1rem;
+    }
+    p:nth-child(3){
+        color: rgb(180, 180, 180);
+        position: relative;
+        font-weight: bolder;
+        text-decoration: line-through;
+        width: 100%;
+        text-align: end;
+    }
+}
+.number{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    p:nth-child(1){
+        color: rgb(255, 125, 26);
+        font-weight: 900;
+        font-size: 25px;
+    }
+    p:nth-child(3){
+        color: rgb(255, 125, 26);
+        font-weight: 900;
+        font-size: 25px;
+    }
+    p:nth-child(2){
+        font-weight: 900;
+        font-size: 16px;
+    }
+}
+.desc a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 125, 26);
+    padding: 1rem 0;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0px 15px 8px #FFCD9F;
+}
+.desc a:hover{
+    background-color: white;
+    color: rgb(255, 125, 26);
+}
+.desc a:active{
+    background-color: white;
+    color: rgb(194, 91, 13);
+    border: 1px solid rgb(255, 125, 26) ;
+}
+/* Fixedcard */
+#fixedcard{
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(255, 125, 26);
+    border-radius: 8px;
+    height: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+#fixedcard>p{
+    background-color: white;
+    align-self: center;
+    width: 90%;
+    margin-top: 1.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: 15px ;
+    font-size: 16px;
+    font-weight: 500;
+}
+#signcard{
+    width: 95%;
+    align-self: center;
+    display: flex;
+    a{
+        color: rgb(255, 125, 26);
+        margin: 1.4rem 0 0 auto;
+        background-color: white;
+        font-weight: 900;
+        width: fit-content;
+        padding: .8rem .3rem;
+        border-radius: 5px;
+        box-shadow: 0px 6px 15px #FFCD9F;
+    }
+    a:active{
+        background-color: white;
+        color: rgb(194, 91, 13);
+        border: 1px solid rgb(255, 125, 26) ;
+    }
+}
+/* footer */
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 125, 26);
+    h2{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .social{
+        font-size: 23px;
+    }
+    p{
+        font-size: 10px;
+        margin-bottom: .5rem;
+    }
+}
+@media screen and (min-width:576px) {
+    body{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    /* nav */
+    nav ul{
+        display: flex;
+        li{
+            color:rgb(100, 100, 100) ;
+            padding: 0 .5rem;
+        }
+    }
+    #burger{
+        display: none;
+    }
+    #menu div:first-child{
+    flex-direction: row;
+    }
+    /* over */
+    #over{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+    header p:last-child{
+        display: block;
+        padding: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* card */
+    main .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card{
+        margin: 3rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    .card .article{
+        width: 326px;
+        height: 326px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        img{
+            border-radius: 23px;
+        }
+    }
+    .desc{
+        width: 60%;
+    }
+    .desc>div{
+        width: 95%;
+    }
+    .price{
+        padding-top: 2rem;
+         flex-direction: row;
+         flex-wrap: wrap;
+         p:nth-child(3){
+            text-align: left;
+        }
+    }
+    .desc a{
+        margin-bottom: unset;
+    }
+    /* fixedcard */
+    #fixedcard{
+        margin-bottom: unset;
+        margin: unset;
+        width: 310px;
+        position: fixed;
+        top: 76%;
+        right: 9%;
+        justify-self: end;
+    } 
+}
